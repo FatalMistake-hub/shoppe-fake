@@ -1,0 +1,46 @@
+:root {
+    --text-color : red;
+}
+#first_header {
+    position: relative;
+    top: 50px;
+    color:aqua;
+    font-size:30px;
+}
+.second_header {
+    color:darkblue;
+    font-size:30px;
+}
+#first_header.second_header:active
+{
+
+    color:bisque;
+    font-size:35px;
+}
+* {
+    color:black;
+
+}
+/* li {
+    color:rgb(13, 214, 221) !important;
+} */
+li:first-child{
+    color:red;
+}
+
+
+h1 {
+    margin-top: 40px;
+    padding: 0 16px;
+    color: var(--text-color);
+    position:sticky;
+    position:-webkit-sticky;
+    top: 10px;
+}
+.header{
+    width: 100%;
+    height:42px;
+    background-color:black;
+    position:fixed;
+    top: 0;
+}
