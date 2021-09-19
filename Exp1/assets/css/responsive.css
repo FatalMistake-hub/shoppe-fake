@@ -1,9 +1,6 @@
 /* mobile & tablet */
 @media (max-width: 1023px) {
-    :root{
-        --header-heigth:68px;
-        --navbar-height:0px;
-    }
+    
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -49,19 +46,28 @@
         width:80px;
         text-align:right;
     }
+    :root{
+        --header-heigth:68px;
+        --navbar-height:0px;
+    }
     
 }
 
 /* mobile */
 @media (max-width : 739px){
+    :root{
+        --header-heigth:56px;
+        --navbar-height:0px;
+    }
     .hide-on-mobile {
         display: none;
     }
     .app__content {
-        margin: 0 4px;
+        margin: -8px 4px;
     }
     .header-with-search{
         justify-content: space-between;
+        padding:6px 0 6px 0;
     }
     .header__cart,
     .header__logo{
@@ -99,6 +105,20 @@
     }
     .footer-content{
         padding: 0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer__download, 
+    .footer-item__link{
+        justify-content: center;
+    }
+    .footer__download-apps{
+        flex: unset;
+    }
+    .footer__download-apps-link{
+        display: block;
+        padding:6px 8px;
     }
     @keyframes mobileSearchSideIn{
         from { 
